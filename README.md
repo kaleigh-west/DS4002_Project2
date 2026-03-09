@@ -1,4 +1,4 @@
-# DS4002_Project1
+# DS4002_Project2
 ## This repository contains the dataset, EDA, and logistic regression model used to classify our real versus fake news dataset. 
 ## Software and Platform
 This project was developed and tested using the following  environment:
