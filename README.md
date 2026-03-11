@@ -12,15 +12,14 @@ Developed Environment: Jupyter Notebook, Visual Studio Code
 Required Python Packages:
 - pandas
 - numpy
-- matplotlib
-- scikit-learn
-- seaborn
-- jupyter
+- matplotlib.pyplot
+- matplotlib.dates
+
 ## Documentation
 ### Data Folder
 &emsp;Data appendix.pdf\
-&emsp;README.md with instructions on how to download raw dataset\
-&emsp;headlines_clean.csv
+&emsp;sp500_clean.csv\
+&emsp;sp500.csv
 ### Output Folder
 Data Appendix Folder\
 &emsp;headline_labels.png\
