@@ -22,9 +22,9 @@ Required Python Packages:
 &emsp;sp500_clean.csv
 ### Output Folder
 Data Appendix Folder\
-&emsp;headline_labels.png\
-&emsp;headline_length_boxplot.png\
-&emsp;headline_length_dist.png\
+&emsp;Closing_prices_hist.png\
+&emsp;Returns_boxplt.png\
+&emsp;Returns_hist.png\
 EDA Folder\
 &emsp;Price_over_time.png\
 &emsp;Volatility_over_time.png\
@@ -32,7 +32,7 @@ Model Folder\
 &emsp;confusion_matrix.png
 ### Scripts Folder
 &emsp;EDA.py\
-&emsp;dataappendix.py\
+&emsp;data_appendix.py\
 &emsp;logistic_regression.py
 ## Reproducibility
 ### Step 1: Download or Clone the Repository
