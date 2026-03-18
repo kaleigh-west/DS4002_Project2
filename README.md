@@ -1,5 +1,5 @@
 # DS4002_Project2
-## This repository contains the dataset, EDA, and logistic regression model used to classify our real versus fake news dataset. 
+## This repository contains the dataset, EDA, and __ model used to analyze S&P 500 volatility across the three most recent presidential administrations. 
 ## Software and Platform
 This project was developed and tested using the following  environment:
 
