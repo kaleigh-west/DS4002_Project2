@@ -129,7 +129,7 @@ Run:
 python SCRIPTS/data_appendix.py
 ```
 
-This script uses `DATA/headlines_clean.csv` to recreate the summary statistics and visualizations included in the Data Appendix.
+This script uses `DATA/sp500_clean.csv` to recreate the summary statistics and visualizations included in the Data Appendix.
 
 ---
 
