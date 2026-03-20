@@ -119,7 +119,7 @@ This script will:
 - Complete a Kruskal–Wallis test
 - Use a chi-aquare test to test whether frequency of extreme-volatility days differs across administrations
 - Perform logistic regression
-- Output Rate_of_Extreme_Volatility.png, SP500_Level_By_Administration.png, Weekly_Volatility.png
+- Output Daily_Log_Returns.png, Rate_of_Extreme_Volatility.png, Rolling_Volatility.png, SP500_Level_By_Administration.png, and Weekly_Volatility.png
 
 ---
 
