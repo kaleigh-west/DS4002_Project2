@@ -1,5 +1,5 @@
 # DS4002_Project2
-## This repository contains the dataset, EDA, and __ model used to analyze S&P 500 volatility across the three most recent presidential administrations. 
+## This repository contains the dataset, EDA, Kruskall-Wallis/Chi square tests, and a logistic regression model used to analyze S&P 500 volatility across the three most recent presidential administrations. 
 ## Software and Platform
 This project was developed and tested using the following  environment:
 
