@@ -12,8 +12,10 @@ Developed Environment: Jupyter Notebook, Visual Studio Code
 Required Python Packages:
 - pandas
 - numpy
-- matplotlib.pyplot
-- matplotlib.dates
+- matplotlib
+- statsmodels
+- scipy
+- scikit-learn
 
 ## Documentation
 ### Data Folder
@@ -21,30 +23,33 @@ Required Python Packages:
 &emsp;SP500.csv\
 &emsp;sp500_clean.csv
 ### Output Folder
-Data Appendix Folder\
-&emsp;Closing_prices_hist.png\
-&emsp;Returns_boxplt.png\
-&emsp;Returns_hist.png\
 EDA Folder\
 &emsp;Price_over_time.png\
 &emsp;Volatility_over_time.png\
-Model Folder\
-&emsp;confusion_matrix.png
+Data Appendix Folder\
+&emsp;Closing_prices_bxplt.png\
+&emsp;Closing_prices_hist.png\
+&emsp;Returns_boxplt.png\
+&emsp;Returns_hist.png\
+sp500_volatility_analysis Folder\
+&emsp;Rate_of_Extreme_Volatility.png\
+&emsp;SP500_Level_By_Administration.png\
+&emsp;Weekly_Volatility.png
 ### Scripts Folder
 &emsp;EDA.py\
 &emsp;data_appendix.py\
-&emsp;logistic_regression.py
+&emsp;sp500_volatility_analysis.py
 ## Reproducibility
 ### Step 1: Download or Clone the Repository
 
 Download this repository as a ZIP file or clone it:
 
 ```
-git clone https://github.com/kaleigh-west/DS4002_Project1.git
-cd DS4002_Project1
+git clone https://github.com/kaleigh-west/DS4002_Project2.git
+cd DS4002_Project2
 ```
 
-All commands below must be run from the project root directory: `DS4002_Project1`
+All commands below must be run from the project root directory: `DS4002_Project2`
 
 ---
 
@@ -55,16 +60,18 @@ This project was developed using Python 3.11.
 Install dependencies:
 
 ```
-pip install pandas numpy scikit-learn matplotlib seaborn jupyter
+pip install pandas numpy scikit-learn matplotlib jupyter statsmodels scipy
 ```
 
 ---
 
 ### Step 3: Download the Original Dataset
 
-The project uses the **Fake and Real News Dataset** from Kaggle:
+The project uses the **S&P 500 Dataset** from Federal Reserve Bank of St. Louis (FRED) :
 
-https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset
+For up-to date data, go to the following website, adjust time window, and download as CSV (or use SP500.csv provided in DATA folder)
+
+https://fred.stlouisfed.org/series/SP500 
 
 After downloading, unzip the folder and place the following files into:
 
@@ -72,8 +79,7 @@ After downloading, unzip the folder and place the following files into:
 
 Files required:
 ```
-DATA/Fake.csv
-DATA/True.csv
+DATA/SP500.csv
 ```
 
 ---
@@ -86,7 +92,7 @@ Run:
 python SCRIPTS/EDA.py
 ```
 
-This recreates the exploratory visualizations used in the report.
+This recreates the exploratory visualizations used in the report and sp500_clean.csv.
 
 Pre-generated figures are also included in the `OUTPUT/` folder for reference.
 
@@ -97,16 +103,21 @@ Pre-generated figures are also included in the `OUTPUT/` folder for reference.
 Run:
 
 ```
-python SCRIPTS/logistic_regression.py
+python SCRIPTS/sp500_volatility_analysis.py
 ```
 
 This script will:
 
-- Combine Fake.csv and True.csv
-- Clean the headline text
-- Create `DATA/headlines_clean.csv`
-- Train the TF-IDF Logistic Regression classifier
-- Output accuracy, precision, recall, F1 score, and confusion matrix
+- Load sp500_clean.csv
+- Compute daily log returns and absolute returns to measure volatility
+- Define high-volatility days
+- Convert daily data into weekly periods
+- Plot rolling volatility
+- Create daily summary metrics including volatility and extreme-event rates
+- Complete a Kruskal–Wallis test
+- Use a chi-aquare test to test whether frequency of extreme-volatility days differs across administrations
+- Perform logistic regression
+- Output Rate_of_Extreme_Volatility.png, SP500_Level_By_Administration.png, Weekly_Volatility.png
 
 ---
 
@@ -115,7 +126,7 @@ This script will:
 Run:
 
 ```
-python SCRIPTS/dataappendix.py
+python SCRIPTS/data_appendix.py
 ```
 
 This script uses `DATA/headlines_clean.csv` to recreate the summary statistics and visualizations included in the Data Appendix.
