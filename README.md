@@ -32,7 +32,9 @@ Data Appendix Folder\
 &emsp;Returns_boxplt.png\
 &emsp;Returns_hist.png\
 sp500_volatility_analysis Folder\
+&emsp;Daily_Log_Returns.png\
 &emsp;Rate_of_Extreme_Volatility.png\
+&emsp;Rolling_Volatility.png\
 &emsp;SP500_Level_By_Administration.png\
 &emsp;Weekly_Volatility.png
 ### Scripts Folder
