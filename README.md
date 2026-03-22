@@ -94,13 +94,13 @@ Run:
 python SCRIPTS/EDA.py
 ```
 
-This recreates the exploratory visualizations used in the report and sp500_clean.csv.
+This recreates the exploratory visualizations used in the report and generates DATA/sp500_clean.csv, which is required for Steps 5 and 6.
 
 Pre-generated figures are also included in the `OUTPUT/` folder for reference.
 
 ---
 
-### Step 5: Train the Model and Create the Analysis Dataset
+### Step 5: Run the Main Statistical Analysis
 
 Run:
 
