@@ -1,5 +1,5 @@
 # DS4002_Project2
-## This repository contains the dataset, EDA, Kruskall-Wallis/Chi square tests, and a logistic regression model used to analyze S&P 500 volatility across the three most recent presidential administrations. 
+## This repository contains the dataset, EDA, Kruskal-Wallis/Chi-squared tests, and a logistic regression model used to analyze S&P 500 volatility across the three most recent presidential administrations. 
 ## Software and Platform
 This project was developed and tested using the following  environment:
 
@@ -71,7 +71,7 @@ pip install pandas numpy scikit-learn matplotlib jupyter statsmodels scipy
 
 The project uses the **S&P 500 Dataset** from Federal Reserve Bank of St. Louis (FRED) :
 
-For up-to date data, go to the following website, adjust time window, and download as CSV (or use SP500.csv provided in DATA folder)
+For up-to-date data, go to the following website, adjust time window, and download as CSV (or use SP500.csv provided in DATA folder)
 
 https://fred.stlouisfed.org/series/SP500 
 
@@ -117,7 +117,7 @@ This script will:
 - Plot rolling volatility
 - Create daily summary metrics including volatility and extreme-event rates
 - Complete a Kruskal–Wallis test
-- Use a chi-aquare test to test whether frequency of extreme-volatility days differs across administrations
+- Use a chi-squared test to test whether frequency of extreme-volatility days differs across administrations
 - Perform logistic regression
 - Output Daily_Log_Returns.png, Rate_of_Extreme_Volatility.png, Rolling_Volatility.png, SP500_Level_By_Administration.png, and Weekly_Volatility.png
 
