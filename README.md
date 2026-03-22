@@ -117,7 +117,7 @@ This script will:
 - Plot rolling volatility
 - Create daily summary metrics including volatility and extreme-event rates
 - Complete a Kruskal–Wallis test
-- Use a chi-squared test to test whether frequency of extreme-volatility days differs across administrations
+- Use a Chi-squared test to test whether frequency of extreme-volatility days differs across administrations
 - Perform logistic regression
 - Output Daily_Log_Returns.png, Rate_of_Extreme_Volatility.png, Rolling_Volatility.png, SP500_Level_By_Administration.png, and Weekly_Volatility.png
 
