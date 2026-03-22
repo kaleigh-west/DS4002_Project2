@@ -94,7 +94,7 @@ Run:
 python SCRIPTS/EDA.py
 ```
 
-This recreates the exploratory visualizations used in the report and generates DATA/sp500_clean.csv, which is required for Steps 5 and 6.
+This recreates the exploratory visualizations used in the report and generates `DATA/sp500_clean.csv`, which is required for Steps 5 and 6.
 
 Pre-generated figures are also included in the `OUTPUT/` folder for reference.
 
